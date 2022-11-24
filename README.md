@@ -54,3 +54,10 @@ git push --force
 ```
 git reset HEAD~1 --soft
 ```
+# Удалить все локальные ветки кроме master:
+```
+git checkout master
+```
+```
+git branch -D $(git branch).Trim()
+```
